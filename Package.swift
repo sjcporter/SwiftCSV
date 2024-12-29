@@ -1,11 +1,11 @@
-// swift-tools-version: 5.6
+// swift-tools-version: 6.0
 
 import PackageDescription
 
 let package = Package(
     name: "SwiftCSV",
     platforms: [
-        .macOS("10.13"), .iOS("12.0"), .tvOS("12.0"), .watchOS("4.0")
+        .macOS("10.13"), .iOS("12.0"), .tvOS("12.0"), .watchOS("4.0"), visionOS(.v1)
     ],
     products: [
         .library(
@@ -29,5 +29,5 @@ let package = Package(
                 .copy("TestData"),
             ]),
     ],
-    swiftLanguageVersions: [.v5, .v4_2]
+    swiftLanguageVersions: [.v5]
 )
